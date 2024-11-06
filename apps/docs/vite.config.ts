@@ -7,6 +7,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [
+      { find: '@', replacement: path.resolve(__dirname, 'src') },
+      { find: '@apps/ui', replacement: path.resolve(__dirname, '../ui/src') },
       {
         find: '@jood/my-some-module',
         replacement: path.resolve(

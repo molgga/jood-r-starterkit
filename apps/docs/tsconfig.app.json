@@ -24,6 +24,12 @@
 
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
+      "@apps/ui": ["../ui/src/*"],
+      "@apps/ui/components/ui/*": ["../ui/src/components/ui/*"],
+      "@apps/ui/hooks/*": ["../ui/src/hooks/*"],
+      "@apps/ui/lib/*": ["../ui/src/lib/*"],
+      "@apps/ui/utils/*": ["../ui/src/utils/*"],
       "@jood/my-some-module": ["../../packages/my-some-module/src"],
       "@jood/my-some-module/*": ["../../packages/my-some-module/src/*"]
     }
